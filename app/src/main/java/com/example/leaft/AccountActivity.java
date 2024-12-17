@@ -1,6 +1,8 @@
 package com.example.leaft;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +13,7 @@ import java.util.HashMap;
 public class AccountActivity extends AppCompatActivity {
 
     private TextView accountsTextView;
+    private Button backToLoginButton;
     private Database databaseHelper;
 
     @Override
@@ -18,8 +21,9 @@ public class AccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        // Collegamento alla TextView
+        // Collegamenti agli elementi UI
         accountsTextView = findViewById(R.id.accountsTextView);
+        backToLoginButton = findViewById(R.id.backToLoginButton);
 
         // Inizializza il database
         databaseHelper = new Database(this);
@@ -48,5 +52,11 @@ public class AccountActivity extends AppCompatActivity {
         }
 
         accountsTextView.setText(userDisplay.toString());
+
+        backToLoginButton.setOnClickListener(view -> {
+            Intent loginIntent = new Intent(AccountActivity.this, MainActivity.class);
+            startActivity(loginIntent);
+            finish();
+        });
     }
 }
