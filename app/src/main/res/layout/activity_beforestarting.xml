@@ -9,7 +9,6 @@
     tools:context=".ObiettiviActivity"
     android:background="@color/black">
 
-    <!-- Background image with transparency -->
     <ImageView
         android:id="@+id/backgroundImg"
         android:layout_width="0dp"

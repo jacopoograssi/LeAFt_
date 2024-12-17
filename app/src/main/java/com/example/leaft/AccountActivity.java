@@ -14,32 +14,31 @@ public class AccountActivity extends AppCompatActivity {
 
     private TextView accountsTextView;
     private Button backToLoginButton;
-    private Database databaseHelper;
+    private Database database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        // Collegamenti agli elementi UI
         accountsTextView = findViewById(R.id.accountsTextView);
         backToLoginButton = findViewById(R.id.backToLoginButton);
 
         // Inizializza il database
-        databaseHelper = new Database(this);
+        database = new Database(this);
 
         // Recupera la lista di utenti dal database
-        ArrayList<HashMap<String, String>> userList = databaseHelper.getAllUsers();
+        ArrayList<HashMap<String, String>> listaUtenti = database.getAllUsers();
 
         // Mostra gli utenti nella TextView
-        StringBuilder userDisplay = new StringBuilder();
+        StringBuilder visualizzaUtenti = new StringBuilder();
 
-        if (userList.isEmpty()) {
-            userDisplay.append("Nessun account registrato.");
+        if (listaUtenti.isEmpty()) {
+            visualizzaUtenti.append("Nessun account registrato.");
         } else {
-            for (int i = 0; i < userList.size(); i++) {
-                HashMap<String, String> user = userList.get(i);
-                userDisplay.append("Account ")
+            for (int i = 0; i < listaUtenti.size(); i++) {
+                HashMap<String, String> user = listaUtenti.get(i);
+                visualizzaUtenti.append("Account ")
                         .append(i + 1)
                         .append(":\n")
                         .append("Nome: ").append(user.get("nome")).append("\n")
@@ -51,7 +50,7 @@ public class AccountActivity extends AppCompatActivity {
             }
         }
 
-        accountsTextView.setText(userDisplay.toString());
+        accountsTextView.setText(visualizzaUtenti.toString());
 
         backToLoginButton.setOnClickListener(view -> {
             Intent loginIntent = new Intent(AccountActivity.this, MainActivity.class);
