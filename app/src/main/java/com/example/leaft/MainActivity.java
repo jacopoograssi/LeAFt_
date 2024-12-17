@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
             boolean isValid = databaseHelper.checkUserCredentials(username, password);
             if (isValid) {
                 Toast.makeText(this, "Accesso effettuato con successo!", Toast.LENGTH_SHORT).show();
-                // Puoi avviare una nuova attività qui
-                Intent intent = new Intent(MainActivity.this, AccountActivity.class);
+
+                Intent intent = new Intent(MainActivity.this, ObiettiviActivity.class);
                 startActivity(intent);
             } else {
                 Toast.makeText(this, "Nome utente o password errati", Toast.LENGTH_SHORT).show();
