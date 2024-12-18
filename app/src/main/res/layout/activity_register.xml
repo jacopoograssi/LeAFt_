@@ -156,7 +156,8 @@
             android:layout_height="wrap_content"
             android:entries="@array/opzioni_eta"
             android:backgroundTint="#FFFFFF"
-            android:popupBackground="#FFFFFF" />
+            android:popupBackground="#FFFFFF"
+            />
 
         <TextView
             android:id="@+id/genderLabel"
