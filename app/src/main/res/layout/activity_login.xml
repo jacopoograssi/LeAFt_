@@ -9,10 +9,6 @@
     android:background="@color/black">
 
     <ImageView
-
-
-
-
         android:id="@+id/backgroundImg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,7 +27,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"
         android:scaleType="centerInside" />
-
 
     <ImageView
         android:id="@+id/wordImageView"
@@ -58,7 +53,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5" />
 
-
     <LinearLayout
         android:id="@+id/formLayout"
         android:layout_width="0dp"
@@ -70,8 +64,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wordImageView">
-
-
 
 
         <TextView
@@ -119,7 +111,6 @@
             android:textColorHint="#807C7C" />
     </LinearLayout>
 
-
     <Button
         android:id="@+id/loginButton"
         android:layout_width="0dp"
@@ -134,7 +125,6 @@
         android:layout_marginEnd="24dp"
         android:layout_marginTop="16dp"
         android:padding="12dp" />
-
 
     <TextView
         android:id="@+id/registrati"
@@ -153,6 +143,5 @@
         app:layout_constraintTop_toBottomOf="@+id/loginButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintVertical_bias="0.3" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/questionpage1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ObiettiviActivity"
+    android:background="@color/black">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/backgroundImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/leaftlogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="68dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="Logo"
+        android:scaleType="centerInside"
+        android:src="@drawable/leaftlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wordImageView"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="Scritta"
+        android:scaleType="centerInside"
+        android:src="@drawable/leaftwordmax"
+        app:layout_constraintStart_toEndOf="@id/logoImageView"
+        app:layout_constraintTop_toTopOf="@id/logoImageView"
+        app:layout_constraintBottom_toBottomOf="@id/logoImageView"
+        />
+
+    <TextView
+        android:id="@+id/titoloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUANTA ESPERIENZA POSSEDI CON LA PALESTRA E CON LE ATTREZZATURE?"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"/>
+
+    <LinearLayout
+        android:id="@+id/bannerBeginner"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="#4CAF50"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/titoloText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BEGINNER"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/peso1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/peso"
+            android:contentDescription="1 Peso" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bannerIntermediate"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="#FFEB3B"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/bannerBeginner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INTERMEDIATE"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/peso2_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/peso"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="Peso 1"/>
+
+        <ImageView
+            android:id="@+id/peso2_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/peso"
+            android:contentDescription="Peso 2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bannerExpert"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="#F44336"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/bannerIntermediate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPERT"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"/>
+
+        <!-- Tre pesi -->
+        <ImageView
+            android:id="@+id/peso3_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/peso"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="Peso 1"/>
+
+        <ImageView
+            android:id="@+id/peso3_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/peso"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="Peso 2"/>
+
+        <ImageView
+            android:id="@+id/peso3_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/peso"
+            android:contentDescription="Peso 3"/>
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/buttonAvanti"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:text="AVANTI"
+    android:backgroundTint="@color/white"
+    android:textColor="@color/black"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginBottom="40dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>

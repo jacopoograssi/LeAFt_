@@ -34,6 +34,7 @@
         <activity android:name=".ObiettiviActivity" />
         <activity android:name=".QuestionPage1" />
         <activity android:name=".QuestionPage2" />
+        <activity android:name=".ExperienceActivity" />
 
 
     </application>
