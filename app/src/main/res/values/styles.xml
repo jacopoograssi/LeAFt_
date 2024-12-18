@@ -1,0 +1,6 @@
+<resources>
+    <style name="SpinnerTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#000000</item>
+    </style>
+</resources>

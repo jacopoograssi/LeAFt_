@@ -58,7 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(this, "Registrazione completata!", Toast.LENGTH_SHORT).show();
 
             // Vai alla schermata di login
-            Intent loginIntent = new Intent(RegisterActivity.this, RegisterActivity.class);
+            Intent loginIntent = new Intent(RegisterActivity.this, MainActivity.class);
             startActivity(loginIntent);
             finish();
         });
