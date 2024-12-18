@@ -14,13 +14,12 @@ public class ObiettiviActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_obiettivi);
 
-        // Collegamento al pulsante "Avanti" nel layout
-        Button pulsanteAvanti = findViewById(R.id.btnGoNext);
+        Button pulsanteAvanti = findViewById(R.id.BottoneObiettiviAvanti);
 
         pulsanteAvanti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent passaggioSchermata = new Intent(ObiettiviActivity.this, BeforeStartingActivity.class);
+                Intent passaggioSchermata = new Intent(ObiettiviActivity.this, QuestionPage1.class);
 
                 startActivity(passaggioSchermata);
             }

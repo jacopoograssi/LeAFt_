@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/questionPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionPage2"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/backgroundImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/leaftlogo" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="98dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Logo"
+        android:scaleType="centerInside"
+        android:src="@drawable/leaftlogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="PIACERE! \n\nIO SONO E SARÒ IL PERSONAL TRAINER CHE TI GUIDERÀ LUNGO\n IL TUO PERCORSO FINO AL TUO TRAGUARDO!"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:lineSpacingExtra="2sp"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/questionTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="COSA FAI NELLA VITA E QUALI SONO I TUOI OBBIETTIVI:"
+        android:textColor="#BB72F8"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!--radiogroup permette di selezionare un radio alla volta-->
+    <RadioGroup
+        android:id="@+id/radioGroupObiettivi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/questionTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <RadioButton
+            android:id="@+id/radioStudente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SONO UNO STUDENTE"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioLavoratore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SONO UN LAVORATORE A TEMPO PIENO"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp" />
+
+        <RadioButton
+            android:id="@+id/radioTempoLibero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HO TANTO TEMPO LIBERO E VORREI SFRUTTARLO"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp" />
+
+        <RadioButton
+            android:id="@+id/radioAltro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALTRO"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/avanti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avanti"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

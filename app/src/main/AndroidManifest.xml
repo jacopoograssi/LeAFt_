@@ -32,7 +32,8 @@
 
         <activity android:name=".AccountActivity" />
         <activity android:name=".ObiettiviActivity" />
-        <activity android:name=".BeforeStartingActivity" />
+        <activity android:name=".QuestionPage1" />
+        <activity android:name=".QuestionPage2" />
 
 
     </application>

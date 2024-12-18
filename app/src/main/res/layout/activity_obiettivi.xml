@@ -5,10 +5,9 @@
     android:id="@+id/obiettivi"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ObiettiviActivity"
+    tools:context=".QuestionPage1"
     android:background="@color/black">
 
-    <!-- Sfondo con trasparenza -->
     <ImageView
         android:id="@+id/backgroundImg"
         android:layout_width="match_parent"
@@ -17,7 +16,6 @@
         android:scaleType="centerCrop"
         android:src="@drawable/leaftlogo" />
 
-    <!-- Logo principale -->
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="98dp"
@@ -30,39 +28,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Scritta vicino al logo -->
-    <ImageView
-        android:id="@+id/wordImageView"
-        android:layout_width="88dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="4dp"
-        android:contentDescription="Scritta"
-        android:scaleType="centerInside"
-        android:src="@drawable/leaftwordmax"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logoImageView" />
-
-    <!-- Testo principale centrato -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="BENVENUTO/A IN LEAFT!"
+        android:textColor="#8B0EFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/textobiettivi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text="RENDIAMO I TUOI OBIETTIVI ANCORA PIÙ CONCRETI E REALI!"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintTop_toBottomOf="@id/textViewWelcome"
+        android:layout_marginTop="50dp" />
 
+    <ImageView
+        android:id="@+id/photoObiettivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gyman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textobiettivi"
+        app:layout_constraintBottom_toTopOf="@id/BottoneObiettiviAvanti"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp" />
 
     <Button
-        android:id="@+id/btnGoNext"
+        android:id="@+id/BottoneObiettiviAvanti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Avanti"
@@ -72,8 +81,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        android:layout_marginTop="32dp" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
