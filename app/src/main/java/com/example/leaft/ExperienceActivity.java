@@ -28,14 +28,14 @@ public class ExperienceActivity extends AppCompatActivity {
         bannerIntermediate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ExperienceActivity.this, EndQuestionActivity.class));
+                startActivity(new Intent(ExperienceActivity.this, IntermediateWorkoutActivity.class));
             }
         });
 
         bannerExpert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ExperienceActivity.this, EndQuestionActivity.class));
+                startActivity(new Intent(ExperienceActivity.this, ExpertWorkoutActivity.class));
             }
         });
     }

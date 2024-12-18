@@ -1,11 +1,10 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/experience"
+    android:id="@+id/intermediate"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExperienceActivity"
+    tools:context=".IntermediateWorkoutActivity"
     android:background="@color/black">
 
     <ImageView
@@ -48,7 +47,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        android:text="WORKOUT PRINCIPIANTE!"
+        android:text="WORKOUT INTERMEDIO!"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -57,11 +56,10 @@
     <LinearLayout
         android:layout_width="390dp"
         android:layout_height="150dp"
-        android:layout_marginLeft="13dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="190dp"
         android:background="#E0DFDF" />
 
-    <!-- Testo e colonne per Leg Press -->
     <TextView
         android:layout_width="150dp"
         android:layout_height="25dp"
@@ -108,42 +106,45 @@
         android:textStyle="bold"
         android:textAlignment="center"/>
 
+
+
     <TextView
         android:layout_width="40dp"
         android:layout_height="70dp"
         android:layout_marginTop="260dp"
         android:layout_marginLeft="45dp"
-        android:text=" 1 \n 2 \n 3 "
+        android:text=" 1 \n 2 \n 3 \n 4 "
         android:textStyle="bold"
         android:textAlignment="center"/>
+
 
     <TextView
         android:layout_width="40dp"
         android:layout_height="70dp"
         android:layout_marginTop="260dp"
         android:layout_marginLeft="133dp"
-        android:text=" 12 \n 10 \n 8 "
+        android:text=" 10 \n 8 \n 6 \n 5 "
         android:textStyle="bold"
         android:textAlignment="center"/>
+
 
     <TextView
-        android:layout_width="40dp"
+        android:layout_width="50dp"
         android:layout_height="70dp"
         android:layout_marginTop="260dp"
-        android:layout_marginLeft="265dp"
-        android:text="40 kg \n45 kg \n50 kg "
+        android:layout_marginLeft="260dp"
+        android:text="80 kg \n90 kg \n100 kg \n110 kg "
         android:textStyle="bold"
         android:textAlignment="center"/>
 
-    <!-- Secondo LinearLayout per Chest Press -->
+
     <LinearLayout
         android:layout_width="390dp"
         android:layout_height="150dp"
+        android:background="#E0DFDF"
         android:layout_marginTop="360dp"
-        android:layout_marginLeft="13dp"
-        android:background="#E0DFDF" />
+        android:layout_marginLeft="12dp"/>
 
-    <!-- Testo e colonne per Chest Press -->
     <TextView
         android:layout_width="150dp"
         android:layout_height="25dp"
@@ -190,39 +191,45 @@
         android:textStyle="bold"
         android:textAlignment="center"/>
 
+
+
     <TextView
         android:layout_width="40dp"
         android:layout_height="70dp"
         android:layout_marginTop="432dp"
         android:layout_marginLeft="45dp"
-        android:text=" 1 \n 2 \n 3 "
+        android:text=" 1 \n 2 \n 3 \n 4 "
         android:textStyle="bold"
         android:textAlignment="center"/>
+
+
+
 
     <TextView
         android:layout_width="40dp"
         android:layout_height="70dp"
         android:layout_marginTop="432dp"
         android:layout_marginLeft="133dp"
-        android:text=" 12 \n 10 \n 8 "
+        android:text=" 10 \n 8 \n 6 \n 5 "
         android:textStyle="bold"
         android:textAlignment="center"/>
 
+
     <TextView
-        android:layout_width="40dp"
+        android:layout_width="50dp"
         android:layout_height="70dp"
         android:layout_marginTop="432dp"
-        android:layout_marginLeft="265dp"
-        android:text="20 kg \n25 kg \n30 kg "
+        android:layout_marginLeft="260dp"
+        android:text="40 kg \n45 kg \n50 kg \n55 kg "
         android:textStyle="bold"
         android:textAlignment="center"/>
 
     <LinearLayout
         android:layout_width="390dp"
         android:layout_height="150dp"
-        android:layout_marginLeft="13dp"
+        android:background="#E0DFDF"
         android:layout_marginTop="530dp"
-        android:background="#E0DFDF"/>
+        android:layout_marginLeft="12dp"/>
 
     <TextView
         android:layout_width="150dp"
@@ -270,39 +277,45 @@
         android:textStyle="bold"
         android:textAlignment="center"/>
 
+
+
     <TextView
         android:layout_width="40dp"
         android:layout_height="70dp"
         android:layout_marginTop="603dp"
         android:layout_marginLeft="45dp"
-        android:text=" 1 \n 2 \n 3 "
+        android:text=" 1 \n 2 \n 3 \n 4 "
         android:textStyle="bold"
         android:textAlignment="center"/>
+
+
 
     <TextView
         android:layout_width="40dp"
         android:layout_height="70dp"
         android:layout_marginTop="603dp"
         android:layout_marginLeft="133dp"
-        android:text=" 12 \n 10 \n 8 "
+        android:text=" 10 \n 8 \n 6 \n 5 "
         android:textStyle="bold"
         android:textAlignment="center"/>
 
+
     <TextView
-        android:layout_width="40dp"
+        android:layout_width="50dp"
         android:layout_height="70dp"
         android:layout_marginTop="603dp"
-        android:layout_marginLeft="265dp"
-        android:text="20 kg \n25 kg \n30 kg "
+        android:layout_marginLeft="260dp"
+        android:text="30 kg \n35 kg \n40 kg \n45 kg "
         android:textStyle="bold"
         android:textAlignment="center"/>
+
 
     <LinearLayout
         android:layout_width="390dp"
         android:layout_height="150dp"
-        android:layout_marginLeft="12dp"
+        android:background="#E0DFDF"
         android:layout_marginTop="700dp"
-        android:background="#E0DFDF" />
+        android:layout_marginLeft="12dp"/>
 
     <TextView
         android:layout_width="150dp"
@@ -350,30 +363,35 @@
         android:textStyle="bold"
         android:textAlignment="center"/>
 
+
+
     <TextView
         android:layout_width="40dp"
         android:layout_height="70dp"
         android:layout_marginTop="770dp"
         android:layout_marginLeft="45dp"
-        android:text=" 1 \n 2 \n 3 "
+        android:text=" 1 \n 2 \n 3 \n 4 "
         android:textStyle="bold"
         android:textAlignment="center"/>
+
 
     <TextView
         android:layout_width="40dp"
         android:layout_height="70dp"
         android:layout_marginTop="770dp"
         android:layout_marginLeft="133dp"
-        android:text=" 15 \n 12 \n 10 "
+        android:text=" 12 \n 10 \n 8 \n 6 "
         android:textStyle="bold"
         android:textAlignment="center"/>
+
 
     <TextView
         android:layout_width="40dp"
         android:layout_height="70dp"
         android:layout_marginTop="770dp"
         android:layout_marginLeft="265dp"
-        android:text="10 kg \n12 kg \n15 kg "
+        android:text="20 kg \n25 kg \n30 kg \n 35 kg "
         android:textStyle="bold"
         android:textAlignment="center"/>
+
 </RelativeLayout>

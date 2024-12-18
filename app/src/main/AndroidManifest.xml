@@ -33,6 +33,8 @@
         <activity android:name=".ExperienceActivity" />
         <activity android:name=".EndQuestionActivity" />
         <activity android:name=".BeginnerWorkoutActivity" />
+        <activity android:name=".IntermediateWorkoutActivity" />
+        <activity android:name=".ExpertWorkoutActivity" />
 
     </application>
 
