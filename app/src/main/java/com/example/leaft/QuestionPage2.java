@@ -3,6 +3,7 @@ package com.example.leaft;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
@@ -16,7 +17,7 @@ public class QuestionPage2 extends Activity {
         setContentView(R.layout.activity_questionpage2);
 
         RadioGroup radioGroup = findViewById(R.id.radioGroupObiettivi);
-        Button avantiButton = findViewById(R.id.BottoneObiettiviAvanti);
+        Button avantiButton = findViewById(R.id.avanti);
 
         avantiButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,7 +25,11 @@ public class QuestionPage2 extends Activity {
                 if (radioGroup.getCheckedRadioButtonId() == -1) {
                     Toast.makeText(QuestionPage2.this, "Seleziona un'opzione per continuare", Toast.LENGTH_SHORT).show();
                 } else {
-                    startActivity(new Intent(QuestionPage2.this, Experience.class)); // Sostituisci con la tua Activity successiva
+                    // Log per debug
+                    Log.d("QuestionPage2", "Navigando verso ExperienceActivity");
+
+                    // Avvia la nuova activity
+                    startActivity(new Intent(QuestionPage2.this, EndQuestionActivity.class));
                 }
             }
         });

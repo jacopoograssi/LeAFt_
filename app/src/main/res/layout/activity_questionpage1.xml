@@ -6,7 +6,7 @@
     android:id="@+id/questionpage1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ObiettiviActivity"
+    tools:context=".QuestionPage1"
     android:background="@color/black">
 
     <ImageView
@@ -48,7 +48,7 @@
         app:layout_constraintBottom_toBottomOf="@id/logoImageView"
         />
 
-    <!-- Title text -->
+
     <TextView
         android:id="@+id/textBeforeStarting"
         android:layout_width="0dp"
@@ -79,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@id/textBeforeStarting"
         />
 
-    <!-- Buttons -->
+
     <Button
         android:id="@+id/button"
         android:layout_width="227dp"
@@ -121,15 +121,5 @@
         app:layout_constraintTop_toBottomOf="@id/button3"
         android:layout_marginTop="32dp"/>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:text="Avanti"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button4"
-        android:layout_marginTop="100dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

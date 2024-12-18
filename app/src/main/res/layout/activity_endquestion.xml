@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/questionpage1"
+    android:id="@+id/endQuestion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ObiettiviActivity"
+    tools:context=".EndQuestionActivity"
     android:background="@color/black">
 
     <ImageView
@@ -85,8 +85,9 @@
             android:textStyle="bold"
             android:layout_marginTop="8dp" />
     </LinearLayout>
+
     <Button
-        android:id="@+id/buttonAvanti"
+        android:id="@+id/avantibutton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="AVANTI"

@@ -5,7 +5,7 @@
     android:id="@+id/obiettivi"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuestionPage1"
+    tools:context=".ObiettiviActivity"
     android:background="@color/black">
 
     <ImageView

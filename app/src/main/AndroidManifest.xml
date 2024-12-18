@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- logo preloader -->
 
     <application
         android:allowBackup="true"
@@ -14,8 +13,6 @@
         android:theme="@style/Theme.LeAFt"
         tools:targetApi="31">
 
-
-        <!-- Attività principale -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -25,7 +22,6 @@
             </intent-filter>
         </activity>
 
-        <!-- Attività di registrazione -->
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
@@ -35,7 +31,9 @@
         <activity android:name=".QuestionPage1" />
         <activity android:name=".QuestionPage2" />
         <activity android:name=".ExperienceActivity" />
-
+        <activity android:name=".EndQuestionActivity" />
+        <activity android:name=".BeginnerWorkoutActivity" />
 
     </application>
+
 </manifest>

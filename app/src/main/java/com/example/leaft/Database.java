@@ -11,11 +11,9 @@ import java.util.HashMap;
 
 public class Database extends SQLiteOpenHelper {
 
-    // Nome e versione del database
     private static final String DATABASE_NAME = "leaft_db";
     private static final int DATABASE_VERSION = 1;
 
-    // Nomi delle tabelle e delle colonne
     private static final String TABLE_USERS = "users";
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_USERNAME = "username";
@@ -45,12 +43,10 @@ public class Database extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Se la versione del database cambia, elimina la tabella esistente e ricreala
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USERS);
         onCreate(db);
     }
 
-    // Metodo per aggiungere un nuovo utente
     public void addUser(String username, String password, String name, String surname, String gender, int age) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -86,7 +82,7 @@ public class Database extends SQLiteOpenHelper {
                 user.put("genere", cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_GENDER)));
                 user.put("eta", cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_AGE)));
 
-                // Aggiungi l'utente alla lista
+                // Aggiunge utente alla lista
                 usersList.add(user);
             } while (cursor.moveToNext());
         }
@@ -96,12 +92,11 @@ public class Database extends SQLiteOpenHelper {
         return usersList;
     }
 
-    // Metodo per fare il login e verificare le credenziali
     public boolean checkUserCredentials(String username, String password) {
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT * FROM " + TABLE_USERS + " WHERE " + COLUMN_USERNAME + " = ? AND " + COLUMN_PASSWORD + " = ?";
         Cursor cursor = db.rawQuery(query, new String[]{username, password});
-
+// va alla prima riga per prendere il primo risultato che trova corrispondere alla query che cerca e prendere username e password
         boolean userExists = cursor.moveToFirst();
         cursor.close();
         db.close();

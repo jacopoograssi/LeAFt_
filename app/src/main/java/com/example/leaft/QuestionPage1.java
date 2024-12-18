@@ -18,7 +18,6 @@ public class QuestionPage1 extends AppCompatActivity {
         Button button2 = findViewById(R.id.button2);
         Button button3 = findViewById(R.id.button3);
         Button button4 = findViewById(R.id.button4);
-        Button button5 = findViewById(R.id.button5);
 
         View.OnClickListener ProssimaPagina = new View.OnClickListener() {
             @Override
@@ -32,6 +31,5 @@ public class QuestionPage1 extends AppCompatActivity {
         button2.setOnClickListener(ProssimaPagina);
         button3.setOnClickListener(ProssimaPagina);
         button4.setOnClickListener(ProssimaPagina);
-        button5.setOnClickListener(ProssimaPagina);
     }
 }
